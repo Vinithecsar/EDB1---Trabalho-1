@@ -6,7 +6,18 @@ Uma vez que a função apenas implementa um loop for, este crescerá conforme o 
 
 
 ### Compare as complexidades do algoritmo iterativo e da versão recursiva apresentada.
-![image](image.png)
+```c++
+int fibonacci(int n) {
+  int;
+
+  if (n <= 1) {
+    return(1);
+  }
+
+  x = fibonacci(n-1) + fibonacci(n-2);
+  return(x);
+}
+```
 
 - No algoritmo iterativo, por se tratar de um loop for, o melhor caso será O(1), e o pior caso será O(n), uma complexidade linear.
 

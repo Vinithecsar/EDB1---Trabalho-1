@@ -6,9 +6,13 @@ Sendo n o tamanho do vetor, teremos:
 O pior caso será aquele em que todo o vetor é verificado por meio da recursão
 
 T(n) = c + T(n-1)
+
 T(n) = c + (c + T(n-2))
+
 T(n) = c + (c + (c + T(n-3)))
+
 ...
+
 T(n) = n * c + c
 
 Então a complexidade é linear, isto é, de O(n), sendo n o tamanho do vetor.
@@ -29,13 +33,21 @@ Sendo n o tamanho do vetor, teremos:
 O pior caso será aquele em que o trecho do vetor a ser comparado é reduzido a somente 1 elemento ou quando o elemento não está no array.
 
 T(n) = c + T(n/2)
+
 T(n) = c + (c + T(n/4))
+
 T(n) = c + (c + (c + T(n/8)))
+
 ...
+
 T(n) = n * c + T(n/2^k)
+
 Quando T(n/2^k) = T(1):
+
 n/2^k = 1
+
 2^k = n
+
 k = log2(n)
 
 Assim, T(n) = k * c + T(1) = log2(n) * c + c
@@ -78,7 +90,18 @@ Uma vez que a função apenas implementa um loop for, este crescerá conforme o 
 
 
 ### Compare as complexidades do algoritmo iterativo e da versão recursiva apresentada.
-![image](exercicio4/image.png)
+```c++
+int fibonacci(int n) {
+  int;
+
+  if (n <= 1) {
+    return(1);
+  }
+
+  x = fibonacci(n-1) + fibonacci(n-2);
+  return(x);
+}
+```
 
 - No algoritmo iterativo, por se tratar de um loop for, o melhor caso será O(1), e o pior caso será O(n), uma complexidade linear.
 
