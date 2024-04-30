@@ -19,6 +19,9 @@ int buscaBinaria(int array[], int limiteEsquerdo, int limiteDireito, int x) {
 }
 
 int main() {
+
+  clock_t start, end; // Para medir o tempo de execução
+
   // Dado um vetor A de tamanho N, ordenado de forma crescente
   // Implemente o algoritmo de busca binária na forma iterativa
   int vetorCom10[10];
@@ -52,18 +55,27 @@ int main() {
 
     switch (tamanhoVetor) {
     case 10:
+      start = clock();
       indice = buscaBinaria(vetorCom10, 0, 9, valorX);
       break;
     case 50:
+      start = clock();
       indice = buscaBinaria(vetorCom50, 0, 49, valorX);
       break;
     case 20000:
+      start = clock();
       indice = buscaBinaria(vetorCom20000, 0, 19999, valorX);
       break;
     default:
       cout << "Tamanho de vetor inválido" << endl;
       return 0;
     }
+
+    end = clock();
+
+    double tempo_levado = double(end - start) / double(CLOCKS_PER_SEC);
+    cout << "Tempo levado pelo programa: " << fixed << tempo_levado << " seg "
+         << endl;
 
     if (indice == -1) {
       cout << "O valor " << valorX << " não foi encontrado no índice" << endl;

@@ -14,6 +14,8 @@ int buscaRecursiva(int indice, int *array, int valorX, int tamanho) {
 
 int main() {
 
+  clock_t start, end; // Para medir o tempo de execução
+
   // vetor A de tamanho N, valores inteiros e um valor inteiro X
   // busca sequencial recursivo
   // retorna o índice do valor X no vetor A, ou -1 caso não seja encontrado
@@ -50,18 +52,27 @@ int main() {
 
     switch (tamanhoVetor) {
     case 10:
+      start = clock();
       indice = buscaRecursiva(0, vetorCom10, valorX, tamanhoVetor);
       break;
     case 50:
+      start = clock();
       indice = buscaRecursiva(0, vetorCom50, valorX, tamanhoVetor);
       break;
     case 20000:
+      start = clock();
       indice = buscaRecursiva(0, vetorCom20000, valorX, tamanhoVetor);
       break;
     default:
       cout << "Tamanho de vetor inválido" << endl;
       return 0;
     }
+
+    end = clock();
+
+    double tempo_levado = double(end - start) / double(CLOCKS_PER_SEC);
+    cout << "Tempo levado pelo programa: " << fixed << tempo_levado << " seg "
+         << endl;
 
     if (indice == -1) {
       cout << "O valor " << valorX << " não foi encontrado no índice" << endl;
