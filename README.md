@@ -1,8 +1,4 @@
-Aluno: Vinícius César
-
 Disciplina IMD0029 - ESTRUTURA DE DADOS BÁSICAS I - T05 (2024.1)
-
-[Link do github: https://github.com/Vinithecsar/EDB1-Trabalho-1](https://github.com/Vinithecsar/EDB1-Trabalho-1)
 
 # Exercício 1
 
@@ -33,15 +29,15 @@ Implementado no código com vetores de tamanho 10, 50 e 20000. O usuário diz qu
 
 Testes com tamanho do vetor 10:
 
-![image](trabalho-unid1/exercicio1/image.png)
+![image](exercicio1/image.png)
 
 Testes com tamanho do vetor 50:
 
-![image](trabalho-unid1/exercicio1/image_2.png)
+![image](exercicio1/image_2.png)
 
 Testes com tamanho do vetor 20000:
 
-![image](trabalho-unid1/exercicio1/image_3.png)
+![image](exercicio1/image_3.png)
 
 # Exercício 2
 
@@ -92,15 +88,15 @@ Implementado no código com vetores de tamanho 10, 50 e 20000. O usuário diz qu
 
 Testes com tamanho do vetor 10:
 
-![image](trabalho-unid1/exercicio2/image.png)
+![image](exercicio2/image.png)
 
 Testes com tamanho do vetor 50:
 
-![image](trabalho-unid1/exercicio2/image_2.png)
+![image](exercicio2/image_2.png)
 
 Testes com tamanho do vetor 20000:
 
-![image](trabalho-unid1/exercicio2/image_3.png)
+![image](exercicio2/image_3.png)
 
 # Exercício 3
 
